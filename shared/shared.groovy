@@ -1,5 +1,5 @@
 @Library('my-shared')
-import org.foo.Utilities.*  
+import static org.foo.Utilities.*  
 import org.foo.Zot 
 
 //def utils = new Utilities(this); 
