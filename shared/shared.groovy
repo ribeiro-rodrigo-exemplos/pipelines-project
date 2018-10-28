@@ -1,11 +1,11 @@
 @Library('my-shared')
-import org.foo.Utilities 
+import org.foo.Utilities.*  
 import org.foo.Zot 
 
-def utils = new Utilities(this); 
+//def utils = new Utilities(this); 
 def z = new Zot() 
 
 node{
-    utils.mvn 'clean package'
+    mvn this, 'clean package'
     z.checkOutFrom 'copiloto-repo'
 }
