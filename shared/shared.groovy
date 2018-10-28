@@ -7,7 +7,7 @@ import org.foo.Parallel
 def z = new Zot() 
 def p = new Parallel() 
 
-def request = libraryResource 'org.m2m.request.json'
+def request = libraryResource 'org/m2m/request.json'
 
 node{
     mvn this, 'clean package'
