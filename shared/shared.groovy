@@ -1,4 +1,4 @@
-@Library('my-shared') _ 
+@Library('my-shared') 
 import static org.foo.Utilities.*  
 import org.foo.Zot 
 
