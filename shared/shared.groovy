@@ -1,6 +1,5 @@
 @Library('my-shared')
 import org.foo.Utilities 
-@Library('my-shared')
 import org.foo.Zot 
 
 def utils = new Utilities(this); 
