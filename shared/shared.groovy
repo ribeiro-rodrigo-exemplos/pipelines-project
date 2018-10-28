@@ -1,9 +1,11 @@
 @Library('my-shared') 
 import static org.foo.Utilities.*  
 import org.foo.Zot 
+import org.foo.Parallel
 
 //def utils = new Utilities(this); 
 def z = new Zot() 
+def p = new Parallel() 
 
 node{
     mvn this, 'clean package'
@@ -14,4 +16,5 @@ node{
     windows{
         echo 'executando no windows'
     }
+    p.parallelize(17)
 }
