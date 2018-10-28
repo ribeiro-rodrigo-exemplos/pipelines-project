@@ -11,4 +11,7 @@ node{
     log.info 'Starting'
     log.warning 'Nothing to do!'
     sayHello 'Joe'
+    windows{
+        echo 'executando no windows'
+    }
 }
