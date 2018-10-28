@@ -7,6 +7,8 @@ import org.foo.Parallel
 def z = new Zot() 
 def p = new Parallel() 
 
+def request = libraryResource 'org.m2m.request.json'
+
 node{
     mvn this, 'clean package'
     z.checkOutFrom 'copiloto-repo'
@@ -17,4 +19,5 @@ node{
         echo 'executando no windows'
     }
     p.parallelize(17)
+    echo "${request}"
 }
