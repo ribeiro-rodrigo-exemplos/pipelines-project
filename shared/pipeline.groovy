@@ -13,19 +13,18 @@ pipeline{
     stages{
         stage('Build'){
             steps{
-                mvn this, 'clean package'
-                z.checkOutFrom 'copiloto-repo'
                 script{
-
+                    mvn this, 'clean package'
+                    z.checkOutFrom 'copiloto-repo'
                     log.info 'Starting'
                     log.warning 'Nothing to do!'
                     sayHello 'Joe'
                     windows{
                         echo 'executando no windows'
                     }
+                    p.parallelize(17)
+                    echo "${request}"
                 }
-                p.parallelize(17)
-                echo "${request}"
             }
         }
     }
