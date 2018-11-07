@@ -5,7 +5,7 @@ pipeline{
             steps{
                 script{
                     def server = Artifactory.newServer 'http://142.93.254.193:8081/artifactory', 'admin', 'password'
-                    println server.properties 
+                    println server.username 
                 }
 
             }
