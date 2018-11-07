@@ -5,9 +5,26 @@ pipeline{
             steps{
                 script{
                     def server = Artifactory.newServer 'http://142.93.254.193:8081/artifactory', 'admin', 'password'
-                    println server.username 
+                    def downloadSpec = """ 
+                        {
+                            "files" : [
+                                {
+                                    "pattern" : "libs-release-local/br/com/m2msolutions/copiloto/copiloto-client/1.1.0/copiloto-client-1.1.0.jar", 
+                                    "target" : "binario/"
+                                }
+                            ]
+                        }
+                    
+                    """
+
+                    server.download(downloadSpec); 
+
+                    println "binario baixado"
                 }
 
+                sh "pwd"
+                sh "ls"
+                
             }
         }
     }
