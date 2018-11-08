@@ -9,15 +9,15 @@ pipeline{
                     
                     def promotionConfig = [
 
-                        'buildName' : 'artifactory-pipeline', 
+                        'buildName' : 'copiloto-client', 
                         'buildNumber' : 6, 
                         'targetRepo' : 'libs-snapshot-local', 
                         'comment' : 'aprovando para produção', 
                         'sourceRepo' : 'libs-release-local', 
-                        'status' : 'Released' 
-                        //'includeDependencies' : true, 
-                        //'copy' : true, 
-                        //'failFast' : true 
+                        'status' : 'Released',  
+                        'includeDependencies' : true, 
+                        'copy' : true, 
+                        'failFast' : true 
 
                     ]
 
