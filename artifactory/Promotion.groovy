@@ -14,7 +14,7 @@ pipeline{
                         'targetRepo' : 'libs-release-local', 
                         'comment' : 'aprovando para produção', 
                         'sourceRepo' : 'libs-snapshot-local', 
-                        'status' : 'Released'
+                        'status' : 'Released', 
                         'includeDependencies' : true, 
                         'copy' : true, 
                         'failFast' : true 
