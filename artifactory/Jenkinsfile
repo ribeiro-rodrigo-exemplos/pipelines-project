@@ -39,8 +39,7 @@ pipeline{
 
                     def buildInfo = server.upload(uploadSpec)
                     buildInfo.name = "Worker de Bilhetagem"
-                    buildInfo.type = "MAVEN"
-                    
+
                     server.publishBuildInfo(buildInfo); 
                 }
 
