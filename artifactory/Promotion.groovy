@@ -14,10 +14,10 @@ pipeline{
                         'targetRepo' : 'libs-snapshot-local', 
                         'comment' : 'aprovando para produção', 
                         'sourceRepo' : 'libs-release-local', 
-                        'status' : 'Released', 
+                        'status' : 'Released' 
                         //'includeDependencies' : true, 
                         //'copy' : true, 
-                        'failFast' : true 
+                        //'failFast' : true 
 
                     ]
 
