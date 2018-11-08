@@ -29,8 +29,8 @@ pipeline{
 
                         "files" : [
                             {
-                                "pattern" : "artifactory/m2m-worker-bilhetagem-1.4.2.jar", 
-                                "target" : "libs-snapshot-local/br/com/m2msolutions/workerbilhetagem/m2m-worker-bilhetagem-1.4.2.jar"
+                                "pattern" : "artifactory/m2m-worker-bilhetagem-1.4.3.jar", 
+                                "target" : "libs-snapshot-local/br/com/m2msolutions/workerbilhetagem/m2m-worker-bilhetagem-1.4.3.jar"
                             }
                         ]    
                     }
