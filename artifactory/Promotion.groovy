@@ -10,11 +10,11 @@ pipeline{
                     def promotionConfig = [
 
                         'buildName' : 'copiloto-client', 
-                        'buildNumber' : 7, 
-                        'targetRepo' : 'libs-release-local'
+                        'buildNumber' : 8, 
+                        'targetRepo' : 'libs-release-local', 
                         //'comment' : 'aprovando para produção', 
                         //'sourceRepo' : 'libs-release-local', 
-                        //'status' : 'Released',  
+                        'status' : 'Released',  
                         //'includeDependencies' : true, 
                         //'copy' : true, 
                         //'failFast' : true 
