@@ -10,7 +10,7 @@ pipeline{
                     def promotionConfig = [
 
                         'buildName' : 'copiloto-client', 
-                        'buildNumber' : 6, 
+                        'buildNumber' : 7, 
                         'targetRepo' : 'libs-release-local'
                         //'comment' : 'aprovando para produção', 
                         //'sourceRepo' : 'libs-release-local', 
