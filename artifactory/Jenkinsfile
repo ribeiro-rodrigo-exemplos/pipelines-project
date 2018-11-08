@@ -3,9 +3,12 @@ pipeline{
     stages{
         stage('Test'){
             steps{
+
+
+
                 script{
                     def server = Artifactory.newServer 'http://142.93.254.193:8081/artifactory', 'admin', 'password'
-                    def downloadSpec = """ 
+                    /*def downloadSpec = """ 
                         {
                             "files" : [
                                 {
@@ -19,7 +22,23 @@ pipeline{
 
                     server.download(downloadSpec); 
 
-                    println "binario baixado"
+                    println "binario baixado"*/
+
+
+                    def uploadSpec = """ {
+
+                        "files" : [
+                            {
+                                "pattern" : "m2m-worker-bilhetagem-1.4.2.jar", 
+                                "target" : "libs-snapshot-local/br/com/m2msolutions/workerbilhetagem/m2m-worker-bilhetagem-1.4.2.jar"
+                            }
+                        ]    
+                    }
+                        
+                    """
+
+                    def buildInfo = server.upload(uploadSpec)
+                    server.publishBuildInfo(buildInfo); 
                 }
 
                 sh "pwd"
