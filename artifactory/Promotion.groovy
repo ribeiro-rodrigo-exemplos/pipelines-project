@@ -11,9 +11,9 @@ pipeline{
 
                         'buildName' : 'artifactory-pipeline', 
                         'buildNumber' : 6, 
-                        'targetRepo' : 'libs-release-local', 
+                        'targetRepo' : 'libs-snapshot-local', 
                         'comment' : 'aprovando para produção', 
-                        'sourceRepo' : 'libs-snapshot-local', 
+                        'sourceRepo' : 'libs-release-local', 
                         'status' : 'Released', 
                         //'includeDependencies' : true, 
                         //'copy' : true, 
