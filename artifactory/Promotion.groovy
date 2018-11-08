@@ -9,7 +9,7 @@ pipeline{
                     
                     def promotionConfig = [
 
-                        'buildName' : 'artifactory-pipeline'
+                        'buildName' : 'artifactory-pipeline', 
                         'buildNumber' : 6, 
                         'targetRepo' : 'libs-release-local', 
                         'comment' : 'aprovando para produção', 
