@@ -15,8 +15,8 @@ pipeline{
                         'comment' : 'aprovando para produção', 
                         'sourceRepo' : 'libs-snapshot-local', 
                         'status' : 'Released', 
-                        'includeDependencies' : true, 
-                        'copy' : true, 
+                        //'includeDependencies' : true, 
+                        //'copy' : true, 
                         'failFast' : true 
 
                     ]
